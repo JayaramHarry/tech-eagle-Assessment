@@ -7,17 +7,10 @@ const RaceTrack = ({ participants, onRestart }) => {
   const [elapsedTime, setElapsedTime] = useState(0);
   const [raceResults, setRaceResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
-  const [participantPositions, setParticipantPositions] = useState([]);
+  const [participantPositions] = useState([]);
 
   useEffect(() => {
     setStartTime(Date.now());
-
-    // Generate random positions for each participant
-    const initialPositions = participants.map(() => ({
-      left: Math.random() * 80 + 10,
-      top: Math.random() * 80 + 10,
-    }));
-    setParticipantPositions(initialPositions);
 
     const raceInterval = setInterval(() => {
       setElapsedTime((time) => time + 1);
@@ -59,13 +52,6 @@ const RaceTrack = ({ participants, onRestart }) => {
     setElapsedTime(0);
     setRaceResults([]);
     setShowResults(false);
-    // Regenerate random positions for each participant on restart
-    const restartPositions = participants.map(() => ({
-      left: Math.random() * 80 + 10,
-      top: Math.random() * 80 + 10,
-    }));
-    setParticipantPositions(restartPositions);
-    onRestart();
   };
 
   useEffect(() => {
