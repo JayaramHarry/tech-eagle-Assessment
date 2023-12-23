@@ -1,0 +1,17 @@
+/* RaceResults.css */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  p {
+    font-weight: bold;
+  }

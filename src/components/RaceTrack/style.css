@@ -1,0 +1,55 @@
+
+.dynamic-oval-race-track {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  min-height: 100vh;
+  background-color: #d4bcbc;
+}
+
+
+.track {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 2px solid #333; 
+  border-radius: 250px;
+  font-size: 12px;
+  mix-blend-mode: difference;
+  background-color: #ffffff10;
+  font-weight: bold;
+  color: #fff;
+}
+
+.first-track{
+  display: flex;
+  border-radius: 53px;
+  border: 2px solid #e4d4d4;
+  width: 15%;
+  height: 85px;
+  font-size: 43px;
+  justify-content: center;
+}
+
+.timer-container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px;
+  border: 2px solid #000;
+  width: 34%;
+  height: 212px;
+  font-size: 43px;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+  font-weight: bold;
+  background-color: #51ff05;
+  margin-top: 0px;
+}
+.elapsed-time {
+  font-size: 25px;
+  margin-bottom: 0px;
+}
